@@ -1,0 +1,78 @@
+/* опишем базовый стиль кнопки калькулятора */
+.my-btn { 
+  margin-right: 5px;           /* задаем отступ от кнопки справа */
+  margin-top: 5px;             /* задаем отступ от кнопки сверху*/
+  width: 50px;                 /* задаем ширину кнопки */
+  height: 50px;                /* задаем высоту кнопки */
+  border-radius: 0%;          /* округляем кнопку */
+  border: none;                /* отключаем обводку */
+  background: #eeff00;         /* задаем серый цвет кнопки */
+  color: rgb(0, 0, 0);                /* задаем белый цвет текста внутри кнопки */
+  font-size: 1.5rem;           /* увеличим размер шрифта */
+  font-family: 'Times New Roman', Times, serif; /* сменим шрифт */
+  cursor: pointer;             /* при наведении на кнопку курсор будет изменен со стрелки на 'указательный палец' */
+  user-select: none;           /* отключаем возможность выделить текст внутри кнопки */
+  font-weight: 900;            /* увеличиваем толщину текста*/
+} 
+
+/* hover - это состояние элемента, когда на него наведен курсор */
+.my-btn:hover {
+  background: rgb(253, 255, 145); /* при наведение курсора на кнопку, она будет окрашена в серый */
+}
+
+/* active - это состояние активации элемента. В случае кнопки - нажатие на нее */
+.my-btn:active {
+  filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
+}
+
+/* селектор для кнопок первостепенных операций */
+.my-btn.primary { 
+  background: #ff2d2d; /* цвет кнопки оранжевый */
+  font-weight: 100;
+}
+
+/* селектор для кнопок второстепенных операций */
+.my-btn.secondary { 
+  background: #00ff00; /* цвет кнопки сервый */
+  font-weight: 100;
+}
+
+/* селектор для кнопки расчета выражения (=) */
+.my-btn.execute { 
+  font-weight: 100;
+}
+
+.my-btn.change { 
+  width: 110px; 
+  background: #00f7ff;
+  font-size: 1.25rem;
+}
+
+/* селектор для поля вывода результата */
+.result { 
+  width: 255px;
+  height: 80px;
+  margin-bottom: 15px;         /* отступ снизу */
+  padding-right: 10px;         /* выступ справа */
+  background: rgb(255, 255, 255); /* цвет можно задавать и таким образом */
+  text-align: right;           /* примагнитим текст к правой стороне */
+  color: #000000;              /* цвет текста белый */
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  font-weight: 100;
+}
+
+.my-btn.third{
+  background: rgb(22, 255, 146); 
+}
+
+.theme {
+  background: #ffffff;
+  background-image: url(planeta_koltso_fioletovyj_149425_1920x1080.jpg);
+  background-repeat: no-repeat;
+}
+
+.fio {
+  color: white; 
+}
